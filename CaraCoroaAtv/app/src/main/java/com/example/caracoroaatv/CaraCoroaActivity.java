@@ -2,7 +2,9 @@ package com.example.caracoroaatv;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 import java.util.Random;
@@ -23,5 +25,9 @@ public class CaraCoroaActivity extends AppCompatActivity {
         } else{
             caraCoroaImagem.setBackgroundResource(R.drawable.moeda_coroa);
         }
+    }
+
+    public void botaoVoltarClick(View view){
+        startActivity(new Intent(this,MainActivity.class));
     }
 }
