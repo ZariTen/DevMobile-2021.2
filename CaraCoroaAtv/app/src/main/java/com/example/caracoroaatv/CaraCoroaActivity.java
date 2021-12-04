@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import java.util.Random;
-
 public class CaraCoroaActivity extends AppCompatActivity {
 
     @Override
@@ -16,8 +14,10 @@ public class CaraCoroaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cara_coroa);
 
-        Random r = new Random();
-        int valor = r.nextInt() % 2;
+        Bundle b = getIntent().getExtras();
+        int valor = b.getInt("caraCoroa");
+
+
         ImageView caraCoroaImagem = findViewById(R.id.caraCoroaImg);
 
         if (valor == 0){
