@@ -29,12 +29,12 @@
         android:layout_marginBottom="226dp"
         android:text="Cupom de desconto?"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toStartOf="@+id/descontoValue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/valorProduto" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/descontoValue"
         android:layout_width="173dp"
         android:layout_height="44dp"
         android:ems="10"
@@ -60,5 +60,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <SeekBar
+        android:id="@+id/cashbackPorcentagem"
+        android:layout_width="338dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="41dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <TextView
+        android:id="@+id/cashbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="200dp"
+        android:text="0%"
+        app:layout_constraintBottom_toTopOf="@+id/cashbackPorcentagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
